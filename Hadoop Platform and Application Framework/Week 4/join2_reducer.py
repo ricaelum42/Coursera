@@ -18,7 +18,10 @@ for line in sys.stdin:
     else:
         if ABC_found:
             print("{0}\t{1}".format(last_key, running_total))
-        running_total = value
+        if value.isdigit():
+            running_total = int(value)
+        else:
+            running_total = 0
         last_key = this_key
         ABC_found = False
         

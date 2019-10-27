@@ -5,6 +5,9 @@ last_key = None
 running_total = 0
 ABC_found = False
 
+
+# Does not include case that records found in chan but not in num
+
 for line in sys.stdin:
     line = line.strip()
     this_key, value = line.split("\t", 1)

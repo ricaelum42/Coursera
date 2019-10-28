@@ -1,0 +1,12 @@
+Option1:
+sudo easy_install https://pypi.python.org/packages/source/i/ipython/ipython-1.2.1.tar.gz#md5=4ffb36697f7ca8cb4a2de0f5b30bc89c
+PYSPARK_DRIVER_PYTHON=ipython pyspark
+sc.version
+
+Option2:
+sudo yum install python-ipython
+PYSPARK_DRIVER_PYTHON=ipython pyspark
+from pyspark import SparkContext
+sc =SparkContext()
+sc.version
+sc.setLogLevel('ERROR')

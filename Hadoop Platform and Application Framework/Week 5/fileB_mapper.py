@@ -3,5 +3,4 @@ def split_fileB(line):
     line = line.strip()
     date, key_value = line.split(" ")
     word, count_string = key_value.split(",")
-    
     return (word, date + " " + count_string)

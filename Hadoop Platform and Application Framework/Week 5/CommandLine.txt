@@ -10,3 +10,9 @@ from pyspark import SparkContext
 sc = SparkContext()
 sc.version
 sc.setLogLevel('ERROR')
+
+
+fileA = sc.textFile("/user/cloudera/input/join1_FileA.txt")
+fileA.collect()
+fileB = sc.textFile("/user/cloudera/input/join1_FileB.txt")
+fileB.collect()

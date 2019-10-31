@@ -40,4 +40,4 @@ show_views = show_views_file.map(split_show_views)
 show_channel_file = sc.textFile("/user/cloudera/input/join2_genchan?.txt")
 show_channel = show_channel_file.<INSERT_CODE_HERE>
 
-joined_dataset = show_channel.join(show_views)
+joined_dataset = show_views.join(show_channel)

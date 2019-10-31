@@ -12,5 +12,5 @@ def split_show_channel(line):
     
 def extract_channel_views(show_views_channel): 
     channel = show_views_channel[1][1]
-    views = show_views_channlel[1][0]
+    views = show_views_channel[1][0]
     return (channel, views)

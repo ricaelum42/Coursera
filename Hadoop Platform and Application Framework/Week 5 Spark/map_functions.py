@@ -10,3 +10,7 @@ def split_show_channel(line):
     show, channel = line.split(",")
     return (show, channel)
     
+def extract_channel_views(show_views_channel): 
+    channel = show_views_channel[1][1]
+    views = show_views_channlel[1][0]
+    return (channel, views)

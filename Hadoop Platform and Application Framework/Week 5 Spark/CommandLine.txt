@@ -12,6 +12,9 @@ sc.version
 sc.setLogLevel('ERROR')
 
 
+
+
+
 fileA = sc.textFile("/user/cloudera/input/join1_FileA.txt")
 fileA.collect()
 fileB = sc.textFile("/user/cloudera/input/join1_FileB.txt")
@@ -25,3 +28,10 @@ fileB_data.collect()
 
 fileB_joined_fileA = fileB_data.join(fileA_data)
 fileB_joined_fileA.collect()
+
+
+
+
+
+show_views_file = sc.textFile("/user/cloudera/input/join2_gennum?.txt")
+show_views_file.take(2)

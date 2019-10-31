@@ -43,3 +43,5 @@ show_channel = show_channel_file.map(split_show_channel)
 joined_dataset = show_views.join(show_channel)
 
 channel_views = joined_dataset.map(extract_channel_views)
+
+channel_views.reduceByKey(sum_count).collect()
